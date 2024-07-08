@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #d0e1f5;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f0f0f0;
+    margin: 0px;
+    width: auto;
+    
+    
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+    
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: end;
+    
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+}
+.nav-links a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(38, 2, 241);
+}
+
+  /* Responsiveness for smaller screens (adjust styles as needed) */
+@media screen and (max-width: 768px) {
+    .nav-links {
+      /* Adjust font size or flex properties for better fit on smaller screens */
+      font-size: 0.8rem;  /* Example: Reduce font size for smaller screens */
+      flex-wrap: wrap;  /* Example: Wrap navigation links to multiple lines on small screens */
+      
+    }
+}
+
+  .container2 {
+    max-width:100%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #d0e1f5;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0.1, 0, 0, 0);
+    margin: 0px;
+    align-items: center;
+
+
+  }
+
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .service {
+    width: calc(30% - 20px);
+    margin: 20px;
+    height: 100px;
+    background-color: #ecedef;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-top: none;
+  }
+
+  .service h2 {
+    margin-top: 0;
+  }
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .service {
+      width: calc(50% - 20px);
+    }
+  }
+
+  @media (max-width: 500px) {
+    .service {
+      width: 100%;
+      height: 130px;
+    }
+    .nav-links{
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      justify-items: center;
+      margin-top: 5%;
+      
+    }
+    .nav-links a{
+      padding: 0px 6px;
+      font-size: 1.25em;
+      
+    }
+    .header{
+      flex-direction: column;
+    }
+  }
+  @media (min-width:1600px) {
+    .services{
+        flex-direction: column;    
+    }
+    .service{
+        height: 200px;
+        
+    }
+  }
+
+  
+
+

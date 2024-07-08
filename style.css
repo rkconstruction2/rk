@@ -1,0 +1,209 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ID:wght@100..400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-color: #d0e1f5;
+    width: 100vw;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding-top: 15%;
+}
+
+.service-img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    margin-bottom: 20px;
+
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+
+
+.images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.images img {
+    width: 60%;
+    height: auto;
+    max-width: 400px;
+    margin: 10px;
+}
+.ac-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 25px;
+    
+    margin-bottom: 3%;
+    width: 80%;
+    max-width: 500px;
+}
+
+
+.ac-services button {
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.ac-services button:hover {
+    background-color: #0099cc;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 1% 4% ;
+    
+    width:100vw;
+    background-color: #00bfff;
+}
+
+
+.images p {
+    font-size: 1.3em;
+    color: #0d0635;
+    padding: 20px 4%;
+    text-align: center;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .images img {
+        width: 90%;
+        margin: 5px 0;
+    }
+    .head ul li a {
+        font-size: 0.7em;
+    }
+}
+
+
+.icn{
+    font-size: 2.3em;
+    margin-right: 5px;
+    
+}
+.icn:hover{
+    color: chocolate;
+}
+.btn{
+   
+    background: none;
+    border: none;
+    
+    
+}
+.btn a{
+    display: flex;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.foot{
+   
+    display: flex;
+    width: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f0f0f0;
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    justify-content:end;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 1rem;
+}
+.nav-links a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(38, 2, 241);
+}
+
+  /* Responsiveness for smaller screens (adjust styles as needed) */
+@media screen and (max-width: 768px) {
+    .nav-links {
+      /* Adjust font size or flex properties for better fit on smaller screens */
+      font-size: 0.8rem;  /* Example: Reduce font size for smaller screens */
+      flex-wrap: wrap;  /* Example: Wrap navigation links to multiple lines on small screens */
+    }
+}
+@media  (max-width:480px) {
+    .nav-links{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        justify-items: center;
+        margin-top: 5%;
+        
+      }
+      .nav-links a{
+        padding: 0px 6px;
+        font-size: 1.25em;
+        
+      }
+      .header{
+        flex-direction: column;
+      }
+    
+}
+
