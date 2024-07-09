@@ -1,209 +1,125 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+ID:wght@100..400&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    
-    background-color: #d0e1f5;
+    scrollbar-width: thin;
+    scrollbar-color: #454545 transparent;
     width: 100vw;
 }
 
-.container {
-    width: 100%;
-    margin: 0 auto;
-    
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
 }
 
+::-webkit-scrollbar-track {
+    background: 0 0;
+}
 
+::-webkit-scrollbar-thumb {
+    background: #454545;
+    border-radius: 4px;
+}
 
-main {
+::-webkit-scrollbar-thumb:hover {
+    background: #595959;
+}
+
+::-webkit-scrollbar-corner {
+    background: 0 0;
+}
+
+.loader {
+    background-size: 200px, cover;
+    background-repeat: no-repeat;
+    background-position-y: center, center;
+    background-position-x: center, left;
+}
+
+.loader::after {
+    content: 'Listening for Updates..';
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    padding-top: 15%;
-}
-
-.service-img {
-    width: 100%;
-    height: auto;
-    max-width: 500px;
-    margin-bottom: 20px;
-
-}
-
-h2 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-    font-family: cursive;
-    font-weight: bolder;
-}
-
-
-
-.images {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #fff;
+    position: absolute;
+    top: 55%;
+    left: 42%;
 }
 
-.images img {
-    width: 60%;
-    height: auto;
-    max-width: 400px;
-    margin: 10px;
-}
-.ac-services {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    padding: 25px;
-    
-    margin-bottom: 3%;
-    width: 80%;
-    max-width: 500px;
+html {
+    line-height: 1.15;
 }
 
+body {
+    margin: 0;
+}
 
-.ac-services button {
-    background-color: #00bfff;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    cursor: pointer;
+* {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+}
+
+p, li, ul, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background-color: transparent;
+}
+
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button, select {
+    text-transform: none;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] 
+
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focus, [type="button"]:-moz-focus, [type="reset"]:-moz-focus, [type="submit"]:-moz-focus {
+    outline: 1px dotted ButtonText;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+input {
+    padding: 2px 4px;
+}
+
+img {
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-family: Lato;
     font-size: 16px;
 }
 
-.ac-services button:hover {
-    background-color: #0099cc;
-}
-
-
-footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 1% 4% ;
-    
-    width:100vw;
-    background-color: #00bfff;
-}
-
-
-.images p {
-    font-size: 1.3em;
-    color: #0d0635;
-    padding: 20px 4%;
-    text-align: center;
-}
-/* Responsive Design */
-@media (max-width: 768px) {
-    .images img {
-        width: 90%;
-        margin: 5px 0;
-    }
-    .head ul li a {
-        font-size: 0.7em;
-    }
-}
-
-
-.icn{
-    font-size: 2.3em;
-    margin-right: 5px;
-    
-}
-.icn:hover{
-    color: chocolate;
-}
-.btn{
-   
-    background: none;
-    border: none;
-    
-    
-}
-.btn a{
-    display: flex;
+body {
+    font-weight: 400;
+    font-style: normal;
     text-decoration: none;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    align-items: center;
-    padding-left: 20px;
-}
-
-.foot{
-   
-    display: flex;
-    width: auto;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #f0f0f0;
-  }
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    
-    justify-content:end;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: black;
-    padding: 0.5rem 1rem;
-}
-.nav-links a:hover{
-    text-decoration: underline;
-    text-decoration-color: rgb(38, 2, 241);
-}
-
-  /* Responsiveness for smaller screens (adjust styles as needed) */
-@media screen and (max-width: 768px) {
-    .nav-links {
-      /* Adjust font size or flex properties for better fit on smaller screens */
-      font-size: 0.8rem;  /* Example: Reduce font size for smaller screens */
-      flex-wrap: wrap;  /* Example: Wrap navigation links to multiple lines on small screens */
-    }
-}
-@media  (max-width:480px) {
-    .nav-links{
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        justify-items: center;
-        margin-top: 5%;
-        
-      }
-      .nav-links a{
-        padding: 0px 6px;
-        font-size: 1.25em;
-        
-      }
-      .header{
-        flex-direction: column;
-      }
-    
+    text-transform: none;
+    letter-spacing: normal;
+    line-height: 1.15;
+    color: var(--dl-color-theme-neutral-dark);
+    background-color: var(--dl-color-theme-neutral-light);
 }
 

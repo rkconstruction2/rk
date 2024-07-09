@@ -4,76 +4,299 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RK Constructions</title>
-    <link rel="stylesheet" href="style.css">
+    <title>RK Construction</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            scrollbar-width: thin;
+            scrollbar-color: #454545 transparent;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f6f9;
+        }
+
+        ::-webkit-scrollbar {
+            height: 8px;
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #454545;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #595959;
+        }
+
+        ::-webkit-scrollbar-corner {
+            background: transparent;
+        }
+
+        .hero-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+
+        .hero-section img {
+            max-width: 100%;
+        }
+
+        .features-section {
+            background-color: #e9ecef;
+            padding: 50px 0;
+        }
+
+        .features-section .feature {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .testimonial-section {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 50px 0;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+            max-width: 800px;
+            position: relative;
+        }
+
+        .testimonial {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            margin-bottom: 30px;
+            /* Increase the gap between testimonials */
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial p {
+            font-style: italic;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+
+        .testimonial-company {
+            font-size: 16px;
+            color: #6c757d;
+        }
+
+        .testimonial-section:before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120%;
+            height: 120%;
+            background-color: rgba(255, 255, 255, 0.2);
+            z-index: -1;
+            filter: blur(20px);
+            border-radius: 12px;
+        }
+
+        .contact-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            margin-bottom: 30px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-info p {
+            margin: 0 15px;
+        }
+
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        .contact-info a:hover {
+            color: #0056b3;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .container {
+            background-color: #eaebf1;
+        }
+
+        @media (max-width:480px) {
+            .hero-section {
+                padding-left: 10px;
+            }
+
+            .testimonial-section {
+                padding-left: 10px;
+            }
+
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <h1 class="logo">Your Company Name</h1>
-            <nav class="nav-links">
-              <a href="#">Home</a>
-              <a href="about.html">About</a>
-              <a href="service.html">Services</a>
-              <a href="project.html">Projects</a>
-              <a href="contact.html">Contact</a>
-            </nav>
-          </header>
-        <main>
-            <!-- <img src="img1.jpeg" alt="AC Service" class="service-img"> -->
-            <h2>Contact Us for</h2>
-            <div class="ac-services">
-                <button>Our Corporate Offices</button>
-                <button>Businesses</button>
-                <button>Buildings</button>
-                <button>Heavy Civil Infrastructure</button>
-                <button>Rk Smart World</button>
-                <button>Power Transmission & Distribution</button>
-            </div>
-            <div class="images">
-                <img src="img2.jpeg" alt="Service 1">
-                <p>At RK-Construction, we deliver innovative and reliable construction solutions tailored to meet our
-                    clients' needs. Our mission is to create structures that are not only aesthetically pleasing but
-                    also sustainable and built to last. As we continue to grow and expand, we remain committed to
-                    providing exceptional service and maintaining the highest standards of construction excellence.</p>
-                <img src="img3.jpeg" alt="Service 2">
-                <p>Our team comprises a talented and experienced workforce, skilled in various aspects of construction.
-                    We pride ourselves on using the best-in-class quality materials to ensure durability and superior
-                    finish in every project we undertake. From residential homes to commercial complexes in both rural
-                    and urban areas, our projects are a testament to our unwavering dedication to quality and
-                    craftsmanship</p>
-                <img src="img4.jpeg" alt="Service 3">
-                <p><b>Since our establishment in 1998</b>, we have been dedicated to building quality homes and complex
-                    structures with precision and care. Our journey began in Itarsi, and over the years, we have grown
-                    to become the fastest-growing builders in the city. Our commitment to excellence and customer
-                    satisfaction has fueled our growth and success in the construction industry.</p>
-            </div>
-        </main>
-        <footer>
-            <div class="foot">
-                <button class="btn"><a href="https://www.instagram.com/rk_construction2?igsh=MWtkZHJ0eTFoc2ZicA=="
-                        target="_blank"><i class="fa-brands fa-square-instagram icn" style="color: #f61ec7;"></i>
-                        Instagram</a></button>
+    <!-- Navbar -->
+    <header class="header">
+        <h1 class="logo">Your Company Name</h1>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="project.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-                <button class="btn"><a href="https://www.facebook.com/profile.php?id=61561702346289&mibextid=ZbWKwL"
-                        target="_blank"><i class="fa-brands fa-facebook icn" style="color: #2064d9;"></i>
-                        Facebook</a></button>
+    <!-- Hero Section -->
+    <div class="container hero-section">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1>Welcome to RK Construction</h1>
+                <p>Building your dreams with quality and excellence.</p>
 
-                <button class="btn"><a href="https://www.youtube.com/@RkConstruction2" target="_blank"><i
-                            class="fa-brands fa-youtube icn" style="color: #d91d08;"></i> Youtube</a></button>
-
-                <button class="btn"><a href="mailto:rkconstruction5906@gmail.com" target="_blank"><i
-                            class="fa-sharp fa-solid fa-envelope icn" style="color: #a92d2d;"></i> Gmail</a></button>
             </div>
-        </footer>
+            <div class="col-md-6">
+                <img src="engineer images.jpeg" alt="Construction Image">
+            </div>
+        </div>
     </div>
+
+    <!-- Image Slider -->
+    <div class="container text-center py-5">
+        <h2>Featured Projects</h2>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="pimage1.jpeg" class="d-block mx-auto" alt="Slider Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/800x400" class="d-block mx-auto" alt="Slider Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/800x400" class="d-block mx-auto" alt="Slider Image 3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="container features-section">
+        <div class="row">
+            <div class="col-md-4 feature">
+                <i class="fas fa-hard-hat fa-3x" style="color: #007bff;"></i>
+                <h3>Quality</h3>
+                <p>We use the best materials and craftsmanship to ensure high-quality construction.</p>
+            </div>
+            <div class="col-md-4 feature">
+                <i class="fas fa-clock fa-3x" style="color: #28a745;"></i>
+                <h3>Timely</h3>
+                <p>We complete our projects on time, ensuring your satisfaction.</p>
+            </div>
+            <div class="col-md-4 feature">
+                <i class="fas fa-thumbs-up fa-3x" style="color: #dc3545;"></i>
+                <h3>Reliable</h3>
+                <p>Our team is reliable and professional, committed to your project's success.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonial Section -->
+    <div class="container testimonial-section">
+        <h2>Customer Reviews</h2>
+        <div class="row">
+            <div class="col-lg-6 mb-4"> <!-- Added mb-4 class for margin bottom -->
+                <div class="testimonial">
+                    <p>"RK Construction did an amazing job on our new office building. Highly recommended!"</p>
+                    <p class="testimonial-author">John Doe</p>
+                    <p class="testimonial-company">ABC Company</p>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4"> <!-- Added mb-4 class for margin bottom -->
+                <div class="testimonial">
+                    <p>"Professional, efficient, and their attention to detail is unmatched. Very pleased!"</p>
+                    <p class="testimonial-author">Jane Smith</p>
+                    <p class="testimonial-company">XYZ Corporation</p>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4"> <!-- Added mb-4 class for margin bottom -->
+                <div class="testimonial">
+                    <p>"We couldn't have asked for a better team to build our dream home. Outstanding work!"</p>
+                    <p class="testimonial-author">Michael Johnson</p>
+                    <p class="testimonial-company">123 Homes Inc.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4"> <!-- Added mb-4 class for margin bottom -->
+                <div class="testimonial">
+                    <p>"The renovation they did on our store exceeded our expectations. Top-notch service!"</p>
+                    <p class="testimonial-author">Emily Brown</p>
+                    <p class="testimonial-company">Brown's Retail</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <footer class="footer">
+        <p>Contact Us Today</p>
+        <p>If you're looking for a reliable construction partner in Itarsi, contact RK Construction today. We'd be happy
+            to
+            discuss your project and how we can help you bring
+        </p>
+        <div class="foot">
+            <a href="https://www.instagram.com/rk_construction2?igsh=MWtkZHJ0eTFoc2ZicA==" target="_blank"><i
+                    class="fa-brands fa-square-instagram con-icn"></i></a> <!-- Placeholder for Instagram icon -->
+            <a href="https://www.facebook.com/profile.php?id=61561702346289&mibextid=ZbWKwL" target="_blank"><i
+                    class="fa-brands fa-facebook-f con-icn"></i></a> <!-- Placeholder for Facebook icon -->
+            <a href="https://www.youtube.com/@RkConstruction2" target="_blank"><i
+                    class="fa-brands fa-youtube con-icn"></i></a>
+            <a href="mailto:rkconstruction5906@gmail.com" target="_blank"><i
+                    class="fa-solid fa-envelope con-icn"></i></a>
+            <a href="tel:+916260321345" target="_blank"><i class="fa-solid fa-phone con-icn "></i></a>
+        </div>
+    </footer>
+
+    <!-- Footer -->
+
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
-
-<!-- <button class="btn"><i class="fa fa-home"></i> Home</button> -->
-<!-- https://fontawesome.com/icons/envelope?f=classic&s=solid -->
