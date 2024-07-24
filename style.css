@@ -214,8 +214,8 @@ body {
         justify-items: center;
         flex-direction: column;
         
-        font-size: 12x;
-        line-height: 25px;
+        font-size: 11x;
+        line-height: 23px;
         text-align: justify;
         
         
@@ -239,6 +239,12 @@ body {
     .ftf{
         width: 340px;
     }
+}
+
+.para{
+  font-size: 11px;
+  background-color: #eaebf1;
+  line-height: 23px;
 }
 
 
