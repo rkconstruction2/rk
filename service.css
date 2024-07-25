@@ -113,6 +113,7 @@ body{
     .service {
       width: 100%;
       height: 200px;
+      margin: 19px;
     }
     .nav-links{
       flex-direction: row;
@@ -165,4 +166,9 @@ body{
   height: 100%;
   width: 100%;
  }
+@media (max-width: 600px) {
+    .dark{
+      background-color: rgba(0, 0, 0, 0.38);      
+   }
+}
 
