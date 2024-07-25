@@ -10,7 +10,8 @@
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="service.css">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -23,11 +24,14 @@
             scrollbar-color: #454545 transparent;
             font-family: 'Poppins', sans-serif;
             background-color: #f4f6f9;
+            max-width: 100vw;
+
+
         }
 
         ::-webkit-scrollbar {
             height: 8px;
-            width: 8px;
+            width: 5px;
         }
 
         ::-webkit-scrollbar-track {
@@ -73,13 +77,14 @@
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             margin: 50px auto;
             max-width: 800px;
-            position: relative;
+
         }
 
         .testimonial {
             background-color: rgba(255, 255, 255, 0.95);
             padding: 30px;
-            margin-bottom: 30px; /* Increase the gap between testimonials */
+            margin-bottom: 30px;
+            /* Increase the gap between testimonials */
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
@@ -145,26 +150,38 @@
             color: #0056b3;
         }
 
+
         footer {
             background-color: #343a40;
             color: white;
             padding: 20px 0;
+            width: 100vw;
         }
-        .container{
+
+        .container {
             background-color: #eaebf1;
+            width: 100vw;
         }
+
         @media (max-width:480px) {
-            .hero-section{
+
+            .hero-section {
                 padding-left: 10px;
             }
-            .testimonial-section{
+
+            .testimonial-section {
                 padding-left: 10px;
             }
-            
+
         }
+
         .d-block {
             height: 400px;
             width: 800px;
+        }
+
+        .foot {
+            padding-top: 10px;
         }
     </style>
 </head>
@@ -188,7 +205,7 @@
             <div class="col-md-6">
                 <h1>Welcome to RK Construction</h1>
                 <p>Building your dreams with quality and excellence.</p>
-                
+
             </div>
             <div class="col-md-6">
                 <img src="engineer images.jpeg" alt="Construction Image">
@@ -202,13 +219,13 @@
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                   <img src="pimage1.jpeg" class="d-block mx-auto" alt="Slider Image 1">
+                    <img src="pimage1.jpeg" class="d-block mx-auto" alt="Slider Image 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="pimage2.jpeg" class="d-block mx-auto" alt="Slider Image 1">
+                    <img src="pimage2.jpeg" class="d-block mx-auto" alt="Slider Image 2">
                 </div>
                 <div class="carousel-item">
-                    <img src="pimage3.jpeg" class="d-block mx-auto" alt="Slider Image 1">
+                    <img src="pimage3.png" class="d-block mx-auto" alt="Slider Image 3">
                 </div>
             </div>
         </div>
@@ -236,37 +253,52 @@
     </div>
 
     <!-- Testimonial Section -->
-    <center><img src="hue.jpg" alt="image" class="ftf"></center>
+
+    <center><img src="hue.png" alt="image" class="ftf"></center>
     <p class="ftf para">RK Construction handles everything from the ground up! We'll partner with you to plan your dream space, from the foundation to the final details. Our skilled team will handle every stage of construction, ensuring quality and clear communication throughout the process. Let RK Construction bring your vision to life, from foundation to finish.</p>
+
     <div class="hv">
-     <div class="h">
-        <h3>High Quality material</h3>
-        <img src="h.jpeg" alt="">
-        <p>Build strong from the start! RK Construction offers high-quality building materials from trusted brands. Our wide selection covers everything from foundations to finishes. We'll help you choose the right materials for your project, ensuring durability, lower maintenance costs, and a beautiful finished space. Invest in quality, invest in your project's success with RK Construction.</p>
-     </div>
-     <div class="v">
-        <h3>Vastu According Design</h3>
-        <img src="v.jpeg" alt="">
-        <p>RK Construction offers Vastu-friendly design, following ancient Indian principles for harmony and well-being in your living space. We can advise on plot layout, room placement, and design elements to create a positive energy flow. Vastu is optional, but we can integrate it seamlessly into your dream home design. Contact us to discuss your vision!</p>
-     </div>
+        <div class="h">
+            <h3>High Quality material</h3>
+            <img src="h.jpeg" alt="">
+            <p>Build strong from the start! RK Construction offers high-quality building materials from trusted brands.
+                Our wide selection covers everything from foundations to finishes. We'll help you choose the right
+                materials for your project, ensuring durability, lower maintenance costs, and a beautiful finished
+                space. Invest in quality, invest in your project's success with RK Construction.</p>
+        </div>
+        <div class="v">
+            <h3>Vastu According Design</h3>
+            <img src="v.jpeg" alt="">
+            <p>RK Construction offers Vastu-friendly design, following ancient Indian principles for harmony and
+                well-being in your living space. We can advise on plot layout, room placement, and design elements to
+                create a positive energy flow. Vastu is optional, but we can integrate it seamlessly into your dream
+                home design. Contact us to discuss your vision!</p>
+        </div>
     </div>
+
+
     <!-- Contact Section -->
     <footer class="footer">
-      <p>Contact Us Today</p>
-      <p>If you're looking for a reliable construction partner in Itarsi, contact RK Construction today. We'd be happy to
-        discuss your project and how we can help you bring
-      </p>
-      <div class="foot">
-        <a href="https://www.instagram.com/rk_construction2?igsh=MWtkZHJ0eTFoc2ZicA==" target="_blank"><i class="fa-brands fa-square-instagram con-icn"></i></a> <!-- Placeholder for Instagram icon -->
-        <a href="https://www.facebook.com/profile.php?id=61561702346289&mibextid=ZbWKwL"target="_blank"><i class="fa-brands fa-facebook-f con-icn"></i></a> <!-- Placeholder for Facebook icon -->
-        <a href="https://www.youtube.com/@RkConstruction2" target="_blank"><i class="fa-brands fa-youtube con-icn"></i></a>
-        <a href="mailto:rkconstruction5906@gmail.com"target="_blank"><i class="fa-solid fa-envelope con-icn"></i></a>
-        <a href="tel:+916260321345"target="_blank"><i class="fa-solid fa-phone con-icn "></i></a>
-    </div>
+        <p>Contact Us Today</p>
+        <p>If you're looking for a reliable construction partner in Itarsi, contact RK Construction today. We'd be happy
+            to
+            discuss your project and how we can help you bring
+        </p>
+        <div class="foot">
+            <a href="https://www.instagram.com/rk_construction2?igsh=MWtkZHJ0eTFoc2ZicA==" target="_blank"><i
+                    class="fa-brands fa-square-instagram con-icn"></i></a> <!-- Placeholder for Instagram icon -->
+            <a href="https://www.facebook.com/profile.php?id=61561702346289&mibextid=ZbWKwL" target="_blank"><i
+                    class="fa-brands fa-facebook-f con-icn"></i></a> <!-- Placeholder for Facebook icon -->
+            <a href="https://www.youtube.com/@RkConstruction2" target="_blank"><i
+                    class="fa-brands fa-youtube con-icn"></i></a>
+            <a href="mailto:rkconstruction5906@gmail.com" target="_blank"><i
+                    class="fa-solid fa-envelope con-icn"></i></a>
+            <a href="tel:+916260321345" target="_blank"><i class="fa-solid fa-phone con-icn "></i></a>
+        </div>
     </footer>
 
     <!-- Footer -->
-    
+
 
     <!-- jQuery and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
