@@ -154,6 +154,7 @@ body {
     }
 }
 
+
 .hv{
     display: flex;
     align-items: start;
@@ -227,7 +228,7 @@ body {
         font-size: 12px;
         line-height: 25px;
         text-align: justify;
-        
+           
         
       }
       .h> img{    
@@ -269,15 +270,27 @@ body {
 }
 @media (max-width:400px) {
     .para{
-        font-size: 11.5px;
+        font-size: 15px;
         background-color: #eaebf1;
         line-height: 22px;
         margin-top: 0;
         text-align: justify;
-        padding: 8px;
+        padding: 8px 10px;   
         padding-bottom:11px;
     
  }
 
 }
+@media (min-width:700px) {
+    .intro{
+        width: 82vw;
+    }
+}
+
+.col-md-6{
+    padding-left: 18px;
+    padding-bottom: 10.5px; 
+}
+
+
 
