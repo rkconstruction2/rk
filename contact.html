@@ -17,10 +17,10 @@
     }
     .main-container{
       display: flex;
-      height: 100vh;
+      min-height: 100vh;
       align-items: center;
       align-content: center;
-      background-color: #d0e1f5e0;
+      background-color: #bdc6d255;
       justify-content: center;
       justify-items: center;
     
@@ -100,15 +100,16 @@
     @media (max-width: 500px) {
       .contact-container {
         padding: 0px;
-        background-color: rgba(255, 255, 255, 0);
+        background-color: #bdc6d200;
         border: none;
         box-shadow: none;
         flex-direction: column;
-        height: auto;
+        min-height: 90vh;
         padding-top: 80px;
         
         
-      }
+        
+      }     
 
       .social-icons a {
         width: 30px;
@@ -149,22 +150,22 @@
   <div class="main-container">
     <div class="contact-container">
 
-      <h2 class="contact-header">Contact Us with</h2>
+      <h2 class="contact-header">Contact Us</h2>
       <div class="contact-info">
         <div>
-          <i class="fa-sharp fa-solid fa-envelope"></i> <!-- Placeholder for email icon -->
+          <img src="email.jpeg" alt="Email Icon"> <!-- Placeholder for email icon -->
           <p><b>Email Address</b></p>
           <p>
             <a href="mailto:rkconstruction5906@gmail.com" class="email">rkconstruction5906@gmail.com</a><br>
           </p>
         </div>
         <div>
-          <i class="fa-solid fa-phone"></i> <!-- Placeholder for phone icon -->
+          <img src="phone.png" alt="Phone Icon"> <!-- Placeholder for phone icon -->
           <p><b>Phone Number</b></p>
           <p>6260321345<br>7610169377</p>
         </div>
         <div>
-          <i class="fa-solid fa-location-dot"></i> <!-- Placeholder for location icon -->
+          <img src="loc.png" alt="Location Icon"> <!-- Placeholder for location icon -->
           <p><b>Office Address</b></p>
           <p>Bihari Colony, Pathrota<br>Itarsi - 461111</p>
         </div>
