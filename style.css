@@ -10,7 +10,7 @@ body {
     color: black;
 }
 .hero-section {
-    background: url('/images/backcover.jpg') no-repeat center/cover;
+    background: url('images/backcover.jpg') no-repeat center/cover;
     color: white;
     padding: 100px 0;
     position: relative;
